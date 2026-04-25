@@ -4,7 +4,8 @@ class Solution(object):
             return ""
         
         prefix = ""
-        for i in range(len(min(strs, key=len))):
+        shortest = len(min(strs, key=len))
+        for i in range(shortest):
             current = strs[0][i]  #taking the first letter from the first word
         
             for s in strs[1:]:
