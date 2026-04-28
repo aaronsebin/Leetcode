@@ -7,6 +7,6 @@ class Solution(object):
 
         reverse = 0
         while x > reverse:
-            reverse = reverse * 10 + x % 10
+            reverse = reverse * 10 + x % 10 #reverse logic
             x //= 10
-        return x == reverse or x == reverse // 10 
+        return x == reverse or x == reverse // 10
